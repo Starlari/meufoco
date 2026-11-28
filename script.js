@@ -1,3 +1,10 @@
+const $html = document.querySelector('html');
+const $checkbox = document.querySelector('#switch');
+
+$checkbox.addEventListener('change', function () {
+  $html.classList.toggle('dark-mode')
+})
+
 /* em memória, já que não estamos trabalhando com banco de dados/back end */
 let state = {
   profile: null,

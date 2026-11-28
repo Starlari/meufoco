@@ -10,8 +10,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-<div id="app">
+
+  <div id="app">
+  <label class="caixa" for="switch">
+
+    <input type="checkbox" id="switch">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <div class="bola"></div>
+    
+  </label>
 
   <!-- Tela de cadastro -->
   <div id="screen-onboarding" class="screen active">
@@ -242,6 +252,7 @@
           <option value="notas">Melhorar minhas notas</option>
           <option value="organizar">Não acumular tarefas</option>
           <option value="concurso">Passar em um concurso</option>
+          <option value="outro">Outro</option>
         </select>
         <button class="btn" onclick="saveProfile()">Salvar alterações</button>
       </div>
@@ -297,6 +308,7 @@
 </div>
 
 <script src="script.js"></script>
+<script src="https://kit.fontawesome.com/17892c687c.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
